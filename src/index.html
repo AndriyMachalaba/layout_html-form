@@ -12,17 +12,17 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="firstfieldset">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div class="surname">
+        <div class="question">
           <label for="surname">Surname:</label>
           <input type="text" id="surname" >
         </div>
-        <div class="name">
+        <div class="question">
           <label for="name">Name:</label>
           <input type="text" id="name">
         </div>
-        <div class="how-old">
+        <div class="question">
           <label for="how-old">How old are You?</label>
           <input 
             type="number" 
@@ -30,48 +30,58 @@
             id="how-old"
             min="1"
             max="100"
-            >
+           >
         </div>
-        <div class="date">
+        <div class="question">
           <label for="date">Full date of birth:</label>
           <input type="date" id="date">
         </div>
-        <div class="terms">
+        <div class="question">
           <label for="terms">I accept the term of the agreement</label>
           <input type="checkbox" id="terms">
         </div>
       </fieldset>
-      <fieldset class="secondfieldset">
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div class="email">
+        <div class="question">
           <label for="email">E-mail:</label>
           <input 
             type="email" 
             id="email"
             placeholder="email@example.com"
-            >
+          >
         </div>
-        <div class="password">
+        <div class="question">
           <label for="password">Password:</label>
           <input type="password" id="password">
         </div>
       </fieldset>
-      <fieldset class="thirdfieldset">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="cats">
+        <div class="question">
           <label for="cats">Do you love cats?</label>
-          <input type="radio" name="cats"> Yes
-          <input type="radio" name="cats"> No
+          <input 
+            type="radio" 
+            name="cats" 
+            id="Yes"
+          >
+          <label for="Yes">Yes</label>
+          <input 
+            type="radio" 
+            name="cats"
+            id="No"
+          >
+          <label for="No">No</label>
         </div>
-        <div class="color">
+        <div class="question">
           <label for="color">What is your favorite color?</label>
           <input type="color" id="color">
         </div>
-        <div class="time">
+        <div class="question">
           <label for="time">What time do you go to bed?</label>
           <input type="time" id="time" >
         </div>
-        <div class="cars">
+        <div class="question">
           <label for="cars">What are your favorite brand of cars?</label>
           <select multiple id="cars">
             <option value="BMW">BMW</option>
@@ -79,24 +89,26 @@
             <option value="Lada">Lada</option>
           </select>
         </div>
-        <div class="work">
+        <div class="question">
           <label for="work">How do you rate our work?</label>
           <input 
             type="range" 
             id="work"
             value="0"
-            >
+          >
         </div>
       </fieldset>
-      <fieldset class="fourthfieldset">
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div class="text">
+        <div class="question">
           <label for="text">Comments:</label>
           <textarea id="text" cols="20"></textarea>
         </div>
-        <div class="recommend">
+        <div class="question">
           <label for="recommend">Would you recommend us?</label>
           <select checked id="recommend">
+            <label for="Yes"></label>
+            <label for="No"></label>
             <option value="Yes">yes</option>
             <option value="No">no</option>
           </select>

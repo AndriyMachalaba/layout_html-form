@@ -1,12 +1,9 @@
-.firstfieldset,
-.secondfieldset,
-.thirdfieldset,
-.fourthfieldset {
+.fieldset {
   margin-bottom: 20px;
   padding-bottom: 0;
 
 }
 
-div {
+.question {
   margin-bottom: 10px;
 }
